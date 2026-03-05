@@ -1,0 +1,46 @@
+name: 🚀 [EPIC]
+description: Describe the EPIC to be implemented
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You are creating an EPIC, please provide the necessary details.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What problem does this solve? Why do you want this?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How do you think this should work?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you considered other approaches?
+    validations:
+      required: false
+  - type: textarea
+    id: design
+    attributes:
+      label: Design or implementation details
+      description: Any design considerations, architecture diagrams, or implementation details
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+        label: Related Links or references
+        description: Paste any relevant URLs, one per line
+        placeholder: |
+            https://example.com/issue-1
+            https://example.com/docs
+    validations:
+        required: false      

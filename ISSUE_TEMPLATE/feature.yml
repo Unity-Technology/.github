@@ -1,0 +1,46 @@
+name: 🔨 [FEAT]
+description: Describe a feature to be implemented
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You are creating a FEATURE (which should be part of an EPIC), please provide the necessary details.
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Provide a clear and concise description of the scope of this feature 
+    validations:
+      required: true
+  - type: textarea
+    id: stories
+    attributes:
+      label: User Stories
+      description: Describe the user stories that this feature addresses.
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Design or implementation details
+      description: Any design considerations, architecture diagrams, or implementation details
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define the conditions that must be met for this feature to be considered complete (DoD).
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+        label: Related Links or references
+        description: Paste any relevant URLs, one per line
+        placeholder: |
+            https://example.com/issue-1
+            https://example.com/docs
+    validations:
+        required: false      

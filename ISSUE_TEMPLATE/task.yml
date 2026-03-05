@@ -1,0 +1,57 @@
+name: ✅ [TASK]
+description: A general task or work item
+type: Task
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ## New Task
+              Please fill out the details below.
+
+    - type: textarea
+      id: description
+      attributes:
+          label: Description
+          description: What needs to be done and why?
+      validations:
+          required: true
+
+    - type: dropdown
+      id: size
+      attributes:
+          label: Estimated Size
+          description: Rough effort estimate
+          options:
+              - XS (< 1 hour)
+              - S (half day)
+              - M (1-2 days)
+              - L (3-5 days)
+              - XL (1+ week)
+      validations:
+          required: false
+
+    - type: dropdown
+      id: category
+      attributes:
+          label: Category
+          multiple: true
+          options:
+              - Frontend
+              - Backend
+              - Infrastructure
+              - Documentation
+              - Design
+              - Testing
+      validations:
+          required: false
+
+    - type: textarea
+      id: references
+      attributes:
+          label: References
+          description: Links to designs, docs, related issues, etc.
+          value: |
+              - [](url)
+      validations:
+          required: false
+
